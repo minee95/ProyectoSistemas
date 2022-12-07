@@ -5,7 +5,14 @@
  ------------------------------------ 
  ====================================*/
 
-
+:root {
+	--main: #121212;
+	--dark-text: #222222;
+	--alternative: #F2EFEA;
+	--sky-blue: #048ba8;
+	--green: #306B34;
+	--casi-green: #1a7b6e;
+}
 
 
 
@@ -24,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #222222;
+	color: var(--dark-text);
 	margin: 0;
 	margin-bottom: 10px;
 	font-weight: 700;
@@ -36,9 +43,9 @@ h1 {
 }
 
 h1 span {
-	background: #baff00;
+	background: var(--green);
 	padding: 0 10px;
-	color: #222222;
+	color: var(--dark-text);
 	display: inline-block;
 }
 
@@ -93,9 +100,9 @@ ol {
 }
 
 .sp-title span {
-	background: #baff00;
+	background: var(--casi-green);
 	padding: 0 10px;
-	color: #222222;
+	color: var(--dark-text);
 	display: inline-block;
 }
 
@@ -233,12 +240,12 @@ ol {
 }
 
 .site-btn.sb-dark {
-	color: #222222;
+	color: var(--dark-text);
 }
 
 .site-btn.sb-dark:after,
 .site-btn.sb-dark:before {
-	background: #222222;
+	background: var(--dark-text);
 }
 
 .site-btn.sb-solid-color {
@@ -248,7 +255,7 @@ ol {
 
 .site-btn.sb-solid-color:after,
 .site-btn.sb-solid-color:before {
-	background: #222222;
+	background: var(--dark-text);
 }
 
 .site-btn.sb-solid-dark {
@@ -464,16 +471,24 @@ ol {
 }
 
 .nav-menu {
-	display: inline-block;
-	float: right;
+	position: absolute;
+	background: rgb(18,18,18);
+	background: linear-gradient(151deg, rgba(18,18,18,1) 36%, rgba(11,11,56,.5) 93%);
+	display: flex;
+	justify-content: center;
+	alignt-items: center;
+	width: 100%;
+	
 }
 
 .nav-menu ul {
 	list-style: none;
+	display: flex;
+	left: 0;
 }
 
 .nav-menu ul li {
-	display: inline;
+	/* display: inline; */
 }
 
 .nav-menu ul li a {
@@ -654,9 +669,9 @@ ol {
 	content: "";
 	height: calc(100% + 50px);
 	width: 330px;
-	border-top: 150px solid #b98f00;
-	border-left: 150px solid #b98f00;
-	border-bottom: 90px solid #b98f00;
+	border-top: 150px solid var(--alternative);
+	border-left: 150px solid var(--alternative);
+	border-bottom: 90px solid var(--alternative);
 	top: 0;
 	left: 0;
 	opacity: 0.73;
@@ -732,7 +747,7 @@ ol {
 .service-box .readmore {
 	font-size: 12px;
 	font-weight: 700;
-	color: #222222;
+	color: var(--dark-text);
 	display: inline-block;
 	padding: 2px 0;
 	background-color: transparent;
@@ -774,7 +789,7 @@ ol {
 	height: 100%;
 	right: 0;
 	top: 0;
-	background: #b98f00;
+	background: var(--casi-green);
 	z-index: 2;
 }
 
@@ -893,7 +908,7 @@ ol {
 
 .projects-filter-nav li.btn-active {
 	background: #baff00;
-	color: #222222;
+	color: var(--dark-text);
 }
 
 .projects-slider {
@@ -991,7 +1006,7 @@ ol {
 	margin-right: 20px;
 	font-size: 14px;
 	font-weight: 700;
-	color: #222222;
+	color: var(--dark-text);
 	letter-spacing: 1px;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -1085,7 +1100,7 @@ ol {
 	display: inline-block;
 	font-size: 15px;
 	font-weight: 500;
-	color: #222222;
+	color: var(--dark-text);
 	padding: 0 5px;
 }
 
@@ -1130,7 +1145,7 @@ ol {
 	height: 100%;
 	right: 0;
 	top: 0;
-	background: #222222;
+	background: var(--dark-text);
 	z-index: 2;
 }
 
@@ -1205,7 +1220,7 @@ ol {
 }
 
 .team-member .member-info p {
-	color: #222222;
+	color: var(--dark-text);
 	font-size: 15px;
 	font-weight: 500;
 	margin-bottom: 0;
