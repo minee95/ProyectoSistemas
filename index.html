@@ -49,20 +49,9 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <link rel="stylesheet" href="text/sss/sss.css">
-	<link rel="stylesheet" href="text/sss/estilos.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<!-- For the FRASES slide -->
-    <script src="text/sss/sss.js"></script>
-	<script>
-	    jQuery(function($){
-	        $('.slider-testimonial').sss({
-	        	slideShow : true,
-	        	speed : 3500
-	        });
-	    });
-	</script>
-
-
+            <link rel="stylesheet" href="text/sss/estilos.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- For the FRASES slide -->
     </head>
     <body>
         <!-- Page Preloder -->
@@ -665,8 +654,15 @@
 		<script src="js/swiper-bundle.min.js"></script>
         <script src="./js/main.js"></script>
 		<script src="js/script.js"></script>
+        <script src="text/sss/sss.js"></script>
+
         <script>
             $(document).ready(function() {
+                $('.slider-testimonial').sss({
+                    slideShow : true,
+                    speed : 3500
+                });
+
                 let contentSection = $('.content-section');
                 let navigation = $('nav');
                 //when a nav link is clicked, smooth scroll to the section
