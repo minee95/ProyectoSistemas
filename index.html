@@ -48,6 +48,20 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <link rel="stylesheet" href="text/sss/sss.css">
+	<link rel="stylesheet" href="text/sss/estilos.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="text/sss/sss.js"></script>
+	<script>
+	    jQuery(function($){
+	        $('.slider-testimonial').sss({
+	        	slideShow : true,
+	        	speed : 3500
+	        });
+	    });
+	</script>
+
+
     </head>
     <body>
         <!-- Page Preloder -->
@@ -66,8 +80,9 @@
                     <li class="active"><a href="#Inicio">Inicio</a></li>
                     <li><a href="#Quien">Quienes somos</a></li>
                     <li><a href="#Objetivo">Propósito</a></li>
+                    
                     <li><a href="#Autores">Autores</a></li>
-                    <li><a href="#entrevistas">Entrevistas</a></li>
+                    
                     <li><a href="./SC-Minerva/internet.html">Libro</a></li>
                 </ul>
             </nav>
@@ -104,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide-num-holder" id="snh-1"></div>
+            
             <div class="hero-right-text">U T P</div>
         </section>
         <!-- Hero section end -->
@@ -142,6 +157,10 @@
             </div>
         </section>
         <!-- Intro section end -->
+        <br> <br>
+        <br> <br>
+        <br> <br>
+     
 
 
 
@@ -153,8 +172,8 @@
 			<div class="row">
 				<div class="col-lg-7 pl-lg-0 offset-lg-5 cta-content">
 					<h2 class="sp-title">NUESTRO <span>PROPÓSITO</span></h2>
+                    <h3></h3>
 					<p>Sabemos que sin la llegada y evolución del internet seguramente no estaríamos realizando este proyecto, es por ello por lo que nuestro objetivo principal es dar a conocer todo lo relacionado con la llegada de internet a Panamá, teniendo como principal fuente de información algunos de los principales actores que formaron parte de esta gran historia.
-						
 						</p>
 						<p>Este ebook tiene la finalidad de inculcar e incentivar a los jóvenes panameños a conocer más acerca del proceso evolutivo del internet en Panamá con relación a la UTP, impacto e importancia.</p>
 					<div class="cta-icons">
@@ -173,6 +192,7 @@
 		</div>
 	</section>
 	<!-- CTA section end -->
+
 
 
         <!-- Milestones section Start -->
@@ -209,106 +229,55 @@
         <!-- Milestones section end -->
 
         <!-- Projects section start -->
+        <section id="Frase" class="content-section"></section>
         <div class="projects-section pb50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="section-title">
-                            <h1>ENTREVISTAS</h1>
+            <div class="wrapper">
+                <div class="slider-testimonial">
+                    <div class="testimonial-item">
+                        
+                        <div class="testimonial-client">
+                          <center><p class="client-name"><h2>Lydia Toppin</h2></p></center>  
+                        </div>
+                        <div class="testimonial-text">
+                            <p>_____</p>
+                            <p>"El internet comenzó en una servilleta"</p>
                         </div>
                     </div>
-                    <div class="col-lg-9">
-                        <ul class="projects-filter-nav">
-                            <li class="btn-filter" data-filter="*">All</li>
-                            <li class="btn-filter" data-filter=".rest">
-                                Restaurations
-                            </li>
-                            <li class="btn-filter" data-filter=".build">
-                                Buildings
-                            </li>
-                            <li class="btn-filter" data-filter=".apart">
-                                Apartments
-                            </li>
-                        </ul>
+                    <div class="testimonial-item">
+                        
+                        <div class="testimonial-client">
+                            
+                          <center><p class="client-name"><h2>Luis Rojas Marcos</h2></p></center>  
+                        </div>
+                        <div class="testimonial-text">
+                            <p>_____</p>
+                            <p>"Internet es positivo porque nos une, nos conecta. Incluso a las personas mayores. El estar conectado nos prolonga la vida y no solamente añade años a la vida, sino vida a los años."</p>
+                        </div>
                     </div>
+                    <div class="testimonial-item">
+                        
+                        <div class="testimonial-client">
+                            
+                          <center><p class="client-name"><h2>Lydia Toppin</h2></p></center>  
+                        </div>
+                        <div class="testimonial-text">
+                            <p>_____</p>
+                            <p>"El internet comenzó en una servilleta"</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
-            <div id="projects-carousel" class="projects-slider">
-                <div
-                    class="single-project set-bg rest"
-                    data-setbg="img/projects/1.jpg"
-                >
-                    <div class="project-content">
-                        <h2>
-                            Biggest <br />
-                            Restaurations
-                        </h2>
-                        <p>Jan 19, 2018</p>
-                        <a href="#" class="seemore">See Project </a>
-                    </div>
-                </div>
-                <div
-                    class="single-project set-bg build"
-                    data-setbg="img/projects/2.jpg"
-                >
-                    <div class="project-content">
-                        <h2>
-                            Office <br />
-                            Building
-                        </h2>
-                        <p>Jan 19, 2018</p>
-                        <a href="#" class="seemore">See Project </a>
-                    </div>
-                </div>
-                <div
-                    class="single-project set-bg apart"
-                    data-setbg="img/projects/3.jpg"
-                >
-                    <div class="project-content">
-                        <h2>
-                            Nice <br />
-                            Apartments
-                        </h2>
-                        <p>Jan 19, 2018</p>
-                        <a href="#" class="seemore">See Project </a>
-                    </div>
-                </div>
-                <div
-                    class="single-project set-bg rest"
-                    data-setbg="img/projects/4.jpg"
-                >
-                    <div class="project-content">
-                        <h2>
-                            Biggest <br />
-                            Restaurations
-                        </h2>
-                        <p>Jan 19, 2018</p>
-                        <a href="#" class="seemore">See Project </a>
-                    </div>
-                </div>
-                <div
-                    class="single-project set-bg apart"
-                    data-setbg="img/projects/2.jpg"
-                >
-                    <div class="project-content">
-                        <h2>
-                            Office <br />
-                            Building
-                        </h2>
-                        <p>Jan 19, 2018</p>
-                        <a href="#" class="seemore">See Project </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Projects section end -->
+        <br> <br>
+        <br> <br>
 
         <!-- Authors section start -->
         <section id="Autores" class="content-section"></section>
         <section class=" spad">
             <div class="container">
                 <div class="section-title">
-                    <h2>AUTORES</h2>
+                    <center><h2>AUTORES</h2></center>
                 </div>
                 <div class="authors-slide-container swiper">
                     <div class="authors-slide-content">
@@ -330,9 +299,9 @@
                                     <h2 class="name">Minerva García</h2>
                                     <p class="description">
                                         <li>Coordinador</li>
-                                        
                                         <li>Creador de Página web</li>
                                         <li>Miembro editorial</li>
+                                        <li>Miembro de redacción</li>
                                         <li>Entrevistador</li>
                                         
                                     </p>
@@ -372,7 +341,7 @@
 
                                     <div class="card-image">
                                         <img
-                                            src="img/internet/Sue acosta.jpg"
+                                            src="img/internet/sue.jpeg"
                                             alt=""
                                             class="card-img"
                                         />
@@ -382,8 +351,8 @@
                                 <div class="card-content">
                                     <h2 class="name">Sue Acosta</h2>
                                     <p class="description">
+                                        <li>Estructorador de página web</li>
                                        
-                                        <li>Miembro editorial</li>
                                         <li>Miembro de redacción</li>
                                        
                                     
@@ -399,7 +368,7 @@
 
                                     <div class="card-image">
                                         <img
-                                            src="img/internet/Josty Crastz.jpeg"
+                                            src="img/internet/josty.jpeg"
                                             alt=""
                                             class="card-img"
                                         />
@@ -441,18 +410,43 @@
                                     <button class="button">milagros.mosquera1@utp.ac.pa</button>
                                 </div>
                             </div>
+                            
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <div class="overlay"></div>
 
                                     <div class="card-image">
                                         <img
-                                            src="img/internet/Jesus connolly.jpg"
+                                            src="img/internet/victor.jpeg"
                                             alt=""
                                             class="card-img"
                                         />
                                     </div>
                                 </div>
+
+                                <div class="card-content">
+                                    <h2 class="name">Víctor Paz</h2>
+                                    <p class="description">
+                                        <li>Estructorador de página web</li>
+                                        <li>Miembro de redacción</li>
+                                    </p>
+
+                                    <button class="button">victor.paz@utp.ac.pa</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <div class="overlay"></div>
+
+                                    <div class="card-image">
+                                        <img
+                                            src="img/internet/jesus.jpeg"
+                                            alt=""
+                                            class="card-img"
+                                        />
+                                    </div>
+                                </div>
+                                
 
                                 <div class="card-content">
                                     <h2 class="name">Jesús Connolly</h2>
@@ -494,7 +488,7 @@
 
                                     <div class="card-image">
                                         <img
-                                            src="img/internet/Alexander pinto.jpg"
+                                            src="img/internet/alexander.jpeg"
                                             alt=""
                                             class="card-img"
                                         />
@@ -539,7 +533,7 @@
 
                                     <div class="card-image">
                                         <img
-                                            src="img/internet/Iker ortiz.jpg"
+                                            src="img/internet/iker.jpeg"
                                             alt=""
                                             class="card-img"
                                         />
@@ -555,28 +549,7 @@
                                     <button class="button">iker.ortiz@utp.ac.pa</button>
                                 </div>
                             </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <div class="overlay"></div>
-
-                                    <div class="card-image">
-                                        <img
-                                            src="img/3.jpg"
-                                            alt=""
-                                            class="card-img"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div class="card-content">
-                                    <h2 class="name">David Dell</h2>
-                                    <p class="description">
-                                        <li>Miembro de redacción</li>
-                                    </p>
-
-                                    <button class="button">View More</button>
-                                </div>
-                            </div>
+                           
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <div class="overlay"></div>
