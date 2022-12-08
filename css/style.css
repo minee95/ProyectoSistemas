@@ -23,6 +23,7 @@ html,
 body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -511,7 +512,7 @@ ol {
 	height: 25px;
 }
 
-.nav-menu ul li.active>a:after {
+.nav-menu ul li a.active:after {
 	height: 25px;
 }
 

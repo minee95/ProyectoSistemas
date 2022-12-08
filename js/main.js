@@ -34,6 +34,13 @@ $(window).on('load', function() {
 		event.preventDefault();
 	});
 
+	/*--------------------
+		Active Menu
+	----------------------*/
+	$('.nav-menu li a').on('click', function() {
+		$('.nav-menu li a.active').removeClass('active');
+		$(this).addClass('active');
+	});
 
 
 	/*------------------
