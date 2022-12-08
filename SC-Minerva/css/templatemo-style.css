@@ -1,6 +1,7 @@
 /* Color variables */
 :root {
-  --txt: #7a7a7a;
+  --txt: #f2efea;
+  --main: #121212;
   --blue-op: #1F214C;
 }
 
@@ -144,7 +145,7 @@ header {
 
 #main-nav ul {
   text-align: center;
-  background-color: rgba(0,0,0,0.9);
+  background-color: var(--main);
   margin-top: 59px;
   width: 100%;
 }
@@ -168,7 +169,7 @@ header {
 }
 
 .navbar-toggle span {
-  background-color: #232323;
+  background-color: var(--main);
 }
 
 
@@ -179,7 +180,7 @@ header {
   float: left;
   height: 100%;
   position: fixed;
-  background-color: rgba(12,12,12,0.9);
+  background-color: var(--main);
   z-index: 10;
 }
 
@@ -189,8 +190,8 @@ header {
   height: 140px;
   line-height: 100px;
   /* background-color: #45489a; */
-  background: rgb(2,0,36);
-  background: linear-gradient(151deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 54%, rgba(0,212,255,1) 100%);
+  background: rgb(18,18,18);
+  background: linear-gradient(151deg, rgba(18,18,18,1) 0%, rgba(4,139,168,1) 100%);
   padding: 20px;
   text-align: center;
 }
