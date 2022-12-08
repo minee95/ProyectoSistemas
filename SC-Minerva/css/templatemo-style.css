@@ -7,11 +7,14 @@
 	--green: #306B34;
 	--casi-green: #1a7b6e;
   --blue-op: #1F214C;
+  --bg-1: #f2efea;
+  --bg-2: #22222213;
 }
 
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: var(--alternative);
 }
 
 p {
@@ -20,19 +23,22 @@ p {
   line-height: 24px;
 }
 
+section {
+  padding: 60px 60px;
+}
+
 .page-content {
   width: 77.5%;
   float: right;
 }
 
 .content-section {
-  padding-top: 80px;
   position: relative;
   width: 100%;
   display: inline-block;
   height: auto;
   left: 50%;
-  text-align: center;
+  text-align: justify;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -43,7 +49,7 @@ p {
 .section-heading {
   text-align: left;
   position: relative;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .section-heading h1 {
@@ -58,6 +64,7 @@ p {
   font-style: normal;
   font-weight: 700;
   color: var(--casi-green);
+  
 }
 
 .section-heading p {
@@ -74,7 +81,7 @@ p {
   font-weight: 600;
   color: var(--casi-green);
   text-transform: capitalize;
-  background-color: #fff;
+  background-color: var(--alternative);
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -85,7 +92,8 @@ p {
 }
 
 .white-button a:hover {
-  background-color: var(--casi-green);
+  /* background-color: var(--casi-green); */
+  background-color: var(--sky-blue);
   color: #fff;
 }
 
@@ -323,30 +331,55 @@ header {
       display: none!important;
   }
 }
-
-/* autores Style */
-
-#autores {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 80px;
-  border-bottom: 1px solid #eee;
+/* +BACKGROUNDs+ */
+#portada {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+  background: rgb(18,18,18);
+  /* background: linear-gradient(180deg, var(--casi-green) 0%, rgba(4,139,168,1) 49%, rgba(242,239,234,1) 100%); */
+}
+/* Capitulo 1 */
+#cap1 {
+  background-color: var(--bg-1);
+}
+#cap2 {
+  background-color: var(--bg-2);
+}
+#cap3 {
+  background-color: var(--bg-1);
+}
+#cap4 {
+  background-color: var(--bg-2);
+}
+#cap5 {
+  background-color: var(--bg-1);
+}
+#cap6 {
+  background-color: var(--bg-2);
+}
+#cap7 {
+  background-color: var(--bg-1);
 }
 
-#autores .section-heading {
+
+
+/* Frases Style */
+#frases .section-heading {
   margin-right: 20%;
 }
 
-#autores .content-section {
+#frases .content-section {
   display: inline-block;
   position: relative;
 }
 
-#autores .owl-dots {
+#frases .owl-dots {
   margin-top: 40px;
 }
 
-#autores .owl-dots .owl-dot span  {
+#frases .owl-dots .owl-dot span  {
   width: 12px;
   height: 12px;
   background-color: #cdcdcd!important;
@@ -355,63 +388,63 @@ header {
   margin: 0 3px;
 }
 
-#autores .owl-dots .active span {
+#frases .owl-dots .active span {
   background-color: var(--casi-green)!important;
 }
 
-#autores .owl-dots button {
+#frases .owl-dots button {
   outline: none;
 }
 
-#autores .owl-nav {
+#frases .owl-nav {
   position: absolute;
   display: inline-block;
   top: -110px;
   right: 0;
 }
 
-#autores .owl-nav button:focus {
+#frases .owl-nav button:focus {
   outline: none;
 }
 
-#autores .owl-nav .owl-prev span {
+#frases .owl-nav .owl-prev span {
   margin-right: 10px;
 }
 
-#autores .owl-nav .owl-next span, #autores .owl-nav .owl-prev span {
+#frases .owl-nav .owl-next span, #frases .owl-nav .owl-prev span {
   outline: none;
   width: 50px;
   height: 50px;
   display: inline-block;
   text-align: center;
   line-height: 42px;
-  background-color: #eee;
-  color: #232323;
+  background-color: var(--main);
+  color: var(--casi-green);
   font-size: 42px;
   transition: all 0.5s;
 }
 
-#autores .owl-nav span:hover {
+#frases .owl-nav span:hover {
   background-color: var(--casi-green);
-  color: #fff;
+  color: var(--alternative);
 }
 
-#autores .item {
+#frases .item {
   text-align: left;
   position: relative;
   z-index: 10;
 }
 
-#autores .item .image {
+#frases .item .image {
   position: relative;
 }
 
-#autores .item .image img {
+#frases .item .image img {
   width: 100%;
   overflow: hidden;
 }
 
-#autores .item .image .autores-button a {
+#frases .item .image .frases-button a {
   font-size: 13px;
   font-weight: 600;
   color: #fff;
@@ -431,45 +464,42 @@ header {
   opacity: 0;
 }
 
-#autores .item:hover .autores-button a {
+#frases .item:hover .frases-button a {
   bottom: 0;
   opacity: 1;
 }
 
-#autores .item .text-content {
-  padding-top: 20px;
-  background-color: #fff;
+#frases .item .text-content {
+  padding: 15px 20px;
+  background-color: var(--main);
   position: relative;
   z-index: 10;
 }
 
-#autores .item .text-content h4 {
-  margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 21px;
+#frases .item .text-content h4 {
+  font-size: 14px;
   font-weight: 600;
-  color: #232323;
+  color: var(--casi-green);
   letter-spacing: 0.5px;
 }
 
-#autores .item .text-content span {
+#frases .item .text-content span {
   display: inline-block;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 600;
   color: #7a7a7a;
   letter-spacing: 0.5px;
-  margin-bottom: 12.5px;
+}
+
+#frases .item .text-content p {
+  color: var(--alternative);
+  font-style: italic;
+  font-size: 21px;
 }
 
 
 
 /* Projects Style */
-
-#metodo {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 50px;
-}
 
 #metodo .masonry {
   position: relative;
@@ -591,15 +621,15 @@ header {
 
 
 
-/* Blog Style */
+/* cap7 Style */
 
-#blog {
+#cap7 {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 80px;
 }
 
-#blog .tabs {
+#cap7 .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -609,7 +639,7 @@ header {
   border-bottom: 10px solid var(--casi-green);
 }
 
-#blog .tabs li {
+#cap7 .tabs li {
   display: inline-block;
   text-align: center;
   width: 25%;
@@ -618,7 +648,7 @@ header {
   padding: 0;
 }
 
-#blog .tabs a {
+#cap7 .tabs a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -631,16 +661,16 @@ header {
   transition: 0.5s;
 }
 
-#blog .tabs a:hover {
+#cap7 .tabs a:hover {
   color: var(--casi-green);
 }
 
 
-#blog .tabs .active:hover {
+#cap7 .tabs .active:hover {
   color: #fff;
 }
 
-#blog .tabs .active {
+#cap7 .tabs .active {
   background-color: var(--casi-green);
   color: #fff;
 }
@@ -656,13 +686,13 @@ header {
   clear:both;
 }
 
-#blog .tabgroup ul {
+#cap7 .tabgroup ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#blog .tabgroup ul li {
+#cap7 .tabgroup ul li {
   display: inline-block;
   text-align: left;
   margin-bottom: 10px;
@@ -670,23 +700,23 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-#blog .tabgroup ul li:last-child {
+#cap7 .tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
 
-#blog .tabgroup ul li img {
+#cap7 .tabgroup ul li img {
   float: left;
   margin-right: 30px;
   max-width: 100%;
   overflow: hidden;
 }
-#blog .tabgroup ul li .text-content {
+#cap7 .tabgroup ul li .text-content {
   display: inline;
 }
 
-#blog .item .text-content h4 {
+#cap7 .item .text-content h4 {
   padding-top: 7.5px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -696,7 +726,7 @@ header {
   letter-spacing: 0.5px;
 }
 
-#blog .item .text-content span {
+#cap7 .item .text-content span {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
@@ -705,7 +735,7 @@ header {
   margin-bottom: 15px;
 }
 
-#blog .item .text-content .accent-button {
+#cap7 .item .text-content .accent-button {
   margin-top: 25px;
 }
 
@@ -898,12 +928,12 @@ header {
     position: relative;
   }
 
-  #autores {
+  #frases {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  #autores .owl-nav {
+  #frases .owl-nav {
     position: absolute;
     display: inline-block;
     top: -220px;
@@ -920,21 +950,21 @@ header {
     padding-right: 15px;
   }
 
-  #blog {
+  #cap7 {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  #blog .tabs a {
+  #cap7 .tabs a {
     font-size: 13px;
   }
 
-  #blog .tabgroup ul li img {
+  #cap7 .tabgroup ul li img {
     float: none;
     width: 100%;
     margin-bottom: 15px;
   }
-  #blog .tabgroup ul li .text-content {
+  #cap7 .tabgroup ul li .text-content {
     display: block;
   }
 
