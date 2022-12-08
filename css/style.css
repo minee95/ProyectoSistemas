@@ -442,17 +442,10 @@ ol {
 /*  Header CSS
 /*----------------------------------------*/
 .header-area {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 50;
-}
-
-.logo-area {
-	float: left;
-	display: inline-block;
-	background: #121212;
-	padding: 20px 60px 30px;
 }
 
 .phone-number {
@@ -471,24 +464,22 @@ ol {
 }
 
 .nav-menu {
-	position: absolute;
+	/* position: absolute; */
 	background: rgb(18,18,18);
-	background: linear-gradient(151deg, rgba(18,18,18,1) 36%, rgba(11,11,56,.5) 93%);
+	background: linear-gradient(151deg, rgba(18,18,18,1) 36%, rgba(11,11,56,.8) 93%);
 	display: flex;
 	justify-content: center;
-	alignt-items: center;
+	align-items: center;
 	width: 100%;
 	
 }
 
 .nav-menu ul {
 	list-style: none;
-	display: flex;
-	left: 0;
 }
 
 .nav-menu ul li {
-	/* display: inline; */
+	display: inline;
 }
 
 .nav-menu ul li a {
@@ -510,7 +501,7 @@ ol {
 	left: 50%;
 	margin-left: 1px;
 	top: 0;
-	background: #004411;
+	background: var(--sky-blue);
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
