@@ -73,7 +73,7 @@
                     
                     <li><a href="#autores">Autores</a></li>
                     
-                    <li><a href="./SC-Minerva/internet.html">Libro</a></li>
+                    <li id="link-libro"><a href="#">Libro</a></li>
                 </ul>
             </nav>
         </header>
@@ -658,6 +658,9 @@
 
         <script>
             $(document).ready(function() {
+                $('#link-libro').click(function() {
+                    window.location.href = "./SC-Minerva/internet.html";
+                })
                 $('.slider-testimonial').sss({
                     slideShow : true,
                     speed : 3500
