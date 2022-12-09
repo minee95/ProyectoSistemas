@@ -937,6 +937,63 @@ header {
     font-size: 15px;
   }
 
+  section {
+    padding: 30px 0;
+  }
+
+  .section-heading p {
+    position: relative;
+  }
+
+  #profesores {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #profesores .owl-nav {
+    position: absolute;
+    display: inline-block;
+    top: -220px;
+    right: 0;
+  }
+
+  #metodo {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #intro {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #cap7 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #cap7 .tabs a {
+    font-size: 13px;
+  }
+
+  #cap7 .tabgroup ul li img {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #cap7 .tabgroup ul li .text-content {
+    display: block;
+  }
+
+  #contact-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .site-btn {
+    min-width: 100px;
+  }
+
 }
 
 
@@ -998,63 +1055,3 @@ header {
 
 }
 
-@media (max-width: 690px) {
-
-  section {
-    padding: 30px 0;
-  }
-
-  .section-heading p {
-    position: relative;
-  }
-
-  #profesores {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #profesores .owl-nav {
-    position: absolute;
-    display: inline-block;
-    top: -220px;
-    right: 0;
-  }
-
-  #metodo {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #intro {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #cap7 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #cap7 .tabs a {
-    font-size: 13px;
-  }
-
-  #cap7 .tabgroup ul li img {
-    float: none;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  #cap7 .tabgroup ul li .text-content {
-    display: block;
-  }
-
-  #contact-content {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .site-btn {
-    min-width: 100px;
-  }
-
-}
