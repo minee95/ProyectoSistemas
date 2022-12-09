@@ -5,7 +5,14 @@
  ------------------------------------ 
  ====================================*/
 
-
+:root {
+	--main: #121212;
+	--dark-text: #222222;
+	--alternative: #F2EFEA;
+	--sky-blue: #048ba8;
+	--green: #306B34;
+	--casi-green: #1a7b6e;
+}
 
 
 
@@ -16,6 +23,7 @@ html,
 body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -24,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #222222;
+	color: var(--dark-text);
 	margin: 0;
 	margin-bottom: 10px;
 	font-weight: 700;
@@ -36,9 +44,9 @@ h1 {
 }
 
 h1 span {
-	background: #baff00;
+	background: var(--green);
 	padding: 0 10px;
-	color: #222222;
+	color: var(--dark-text);
 	display: inline-block;
 }
 
@@ -93,9 +101,9 @@ ol {
 }
 
 .sp-title span {
-	background: #baff00;
+	background: var(--casi-green);
 	padding: 0 10px;
-	color: #222222;
+	color: var(--dark-text);
 	display: inline-block;
 }
 
@@ -127,10 +135,11 @@ ol {
 	margin-bottom: 75px;
 }
 
+/*AUTORES*/
 .section-title h1,
 .section-title h2 {
 	display: inline-block;
-	background: #baff00;
+	background: #1a7b6e;
 	padding: 0 20px;
 	margin-bottom: 0;
 	font-size: 60px;
@@ -233,12 +242,12 @@ ol {
 }
 
 .site-btn.sb-dark {
-	color: #222222;
+	color: var(--dark-text);
 }
 
 .site-btn.sb-dark:after,
 .site-btn.sb-dark:before {
-	background: #222222;
+	background: var(--dark-text);
 }
 
 .site-btn.sb-solid-color {
@@ -248,7 +257,7 @@ ol {
 
 .site-btn.sb-solid-color:after,
 .site-btn.sb-solid-color:before {
-	background: #222222;
+	background: var(--dark-text);
 }
 
 .site-btn.sb-solid-dark {
@@ -435,17 +444,10 @@ ol {
 /*  Header CSS
 /*----------------------------------------*/
 .header-area {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 50;
-}
-
-.logo-area {
-	float: left;
-	display: inline-block;
-	background: #121212;
-	padding: 20px 60px 30px;
 }
 
 .phone-number {
@@ -464,8 +466,14 @@ ol {
 }
 
 .nav-menu {
-	display: inline-block;
-	float: right;
+	/* position: absolute; */
+	background: rgb(18,18,18);
+	background: linear-gradient(151deg, rgba(18,18,18,1) 36%, rgba(11,11,56,.8) 93%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	
 }
 
 .nav-menu ul {
@@ -495,7 +503,7 @@ ol {
 	left: 50%;
 	margin-left: 1px;
 	top: 0;
-	background: #004411;
+	background: var(--sky-blue);
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
@@ -505,7 +513,7 @@ ol {
 	height: 25px;
 }
 
-.nav-menu ul li.active>a:after {
+.nav-menu ul li a.active:after {
 	height: 25px;
 }
 
@@ -654,9 +662,9 @@ ol {
 	content: "";
 	height: calc(100% + 50px);
 	width: 330px;
-	border-top: 150px solid #b98f00;
-	border-left: 150px solid #b98f00;
-	border-bottom: 90px solid #b98f00;
+	border-top: 150px solid var(--alternative);
+	border-left: 150px solid var(--alternative);
+	border-bottom: 90px solid var(--alternative);
 	top: 0;
 	left: 0;
 	opacity: 0.73;
@@ -679,85 +687,6 @@ ol {
 	margin-bottom: 50px;
 }
 
-/*----------------------------------------*/
-/*  Service Section CSS
-/*----------------------------------------*/
-.service-box {
-	margin-bottom: 30px;
-}
-
-.service-box .sb-icon {
-	margin-bottom: 30px;
-	width: 100px;
-	height: 125px;
-	text-align: center;
-	position: relative;
-	overflow: hidden;
-	background-color: transparent;
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	transition: all 0.4s;
-}
-
-.service-box .sb-icon .sb-img-icon {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.service-box .sb-icon .sb-img-icon img {
-	opacity: 0.2;
-	max-height: 70px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.service-box .sb-icon::after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #fff;
-	left: 25px;
-	top: -80px;
-	-webkit-transform: rotate(-65deg);
-	    -ms-transform: rotate(-65deg);
-	        transform: rotate(-65deg);
-}
-
-.service-box .readmore {
-	font-size: 12px;
-	font-weight: 700;
-	color: #222222;
-	display: inline-block;
-	padding: 2px 0;
-	background-color: transparent;
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	transition: all 0.4s;
-}
-
-.service-box:hover .sb-icon {
-	background-color: #baff00;
-}
-
-.service-box:hover .sb-icon .sb-img-icon {
-	left: 15px;
-	margin-bottom: 5px;
-}
-
-.service-box:hover .sb-icon .sb-img-icon img {
-	opacity: 1;
-}
-
-.service-box:hover .readmore {
-	background-color: #baff00;
-	padding: 2px 10px;
-}
 
 /*----------------------------------------*/
 /*  CTA Section CSS
@@ -774,7 +703,7 @@ ol {
 	height: 100%;
 	right: 0;
 	top: 0;
-	background: #b98f00;
+	background: var(--casi-green);
 	z-index: 2;
 }
 
@@ -893,7 +822,7 @@ ol {
 
 .projects-filter-nav li.btn-active {
 	background: #baff00;
-	color: #222222;
+	color: var(--dark-text);
 }
 
 .projects-slider {
@@ -991,7 +920,7 @@ ol {
 	margin-right: 20px;
 	font-size: 14px;
 	font-weight: 700;
-	color: #222222;
+	color: var(--dark-text);
 	letter-spacing: 1px;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -1085,7 +1014,7 @@ ol {
 	display: inline-block;
 	font-size: 15px;
 	font-weight: 500;
-	color: #222222;
+	color: var(--dark-text);
 	padding: 0 5px;
 }
 
@@ -1130,7 +1059,7 @@ ol {
 	height: 100%;
 	right: 0;
 	top: 0;
-	background: #222222;
+	background: var(--dark-text);
 	z-index: 2;
 }
 
@@ -1205,7 +1134,7 @@ ol {
 }
 
 .team-member .member-info p {
-	color: #222222;
+	color: var(--dark-text);
 	font-size: 15px;
 	font-weight: 500;
 	margin-bottom: 0;

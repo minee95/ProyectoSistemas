@@ -1,3 +1,15 @@
+#more {display: none;}
+.button {
+  background-color: #F2EFEA; /* Green */
+  border: none;
+  color: #1a7b6e;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 /* LIGHT BOX */
 
 body:after {
