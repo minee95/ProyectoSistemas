@@ -80,7 +80,7 @@ https://templatemo.com/tm-518-sentra
                         <li><a href="#cap5">Capítulo 5: Centralización del Internet</a></li>
                         <li><a href="#cap6">Capítulo 6: Problemas y más problemas</a></li>
                         <li><a href="#cap7">Capítulo 7: 2022 - 2050</a></li>
-                        <li><a href="../index.html">Regresar</a></li>
+                        <li><a id="back-link" href="../index.html">Regresar</a></li>
                     </ul>
                 </nav>
             </div>
@@ -155,8 +155,11 @@ https://templatemo.com/tm-518-sentra
             <ul class="social-icons">
                 <li>
                     <a href="../index.html"><i class="fa fa-arrow-left"></i><span></span>Regresar</a>
+            
                 </li>
-                
+                <li>
+                    <a href="../Historia del Internet - 1LS112.pdf" download><span></span>PDF</a>
+                </li>
             </ul>
         </div>
 
@@ -578,7 +581,7 @@ https://templatemo.com/tm-518-sentra
                             Durante la llegada del internet a Panamá hubo muchas circunstancias que se metieron en el camino para que el internet hiciera historia, iniciando así retos y problemas que mas tarde con la ayuda de técnicos panameños y parte del conocimiento del extranjero al fin el internet pudo llegar a Panamá hacer su papel conectar a Panamá a un mundo de facilidades 
  
                         </p>
-                        <h2>No puedo</h2>
+                        <h3>No puedo</h3>
                         <br>
                         <p>
                             El desentendimiento de los técnicos sobre que era el internet hacía que la gente dudara de sus capacidades para plantar la red en Panamá parte de los técnicos panameños esto hacia que el panameño se dijera no estamos preparados para esto, era una cosa inesperada y no había ese atrevimiento hacia algo nuevo, lo que hacía imposible el entrar a los técnicos panameños hacia este inmenso proyecto. 
@@ -620,7 +623,7 @@ https://templatemo.com/tm-518-sentra
                         </p>
                         
                          <br>
-                         <h2>Primeras conexiones</h2>
+                         <h3>Primeras conexiones</h3>
                          <br>
                         <p>
                             Las primeras conexiones eran por medio de cables, por lo tanto, si querías conectarte a internet la única manera para hacerlo era estar conectado por medio de un cable largo desde tu casa hasta el punto principal (servidor).
@@ -647,7 +650,7 @@ https://templatemo.com/tm-518-sentra
                             La prensa quería que su periódico fuera el primer periódico en el internet aquí en Panamá, la profesora Lydia Toppin fue la encargada de ese proyecto y junto con la profesora María Raquel fueron las que llevaron esa primera versión de la prensa a internet y esta estaba alojada en los servidores de la UTP que estos ya no eran un computador enorme si no que ya habían evolucionado a unos servidores, luego las personas querían conectarse a ver la prensa pero no tenían como ya que no existían los celulares inteligentes como los tenemos hoy en día y la única manera para hacerlo era por medio de una laptop o una PC y no todo el mundo tenia una de estas y aunque las tuvieran no tenían como conectarse a internet. 
                          </p>
                          <br>
-                         <h2>Presión de Gobierno y Escuelas</h2>
+                         <h3>Presión de Gobierno y Escuelas</h3>
                          <br>
                          <p>
                             Empieza la presión de las escuelas para hacer que el gobierno ponga el internet, pero para esos tiempos no existía el WIFI ya que este llega unos años después, por lo tanto, todo tenia que ser por cables físicos. 
@@ -747,20 +750,18 @@ https://templatemo.com/tm-518-sentra
             </footer>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>
-            window.jQuery ||
-                document.write(
-                    '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
-                );
-        </script>
-
+        <script src="../js/jquery-2.1.4.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <script>
+
+            $('#back-link').click(function() {
+                window.location.href = "../index.html";
+            });
+
             // Hide Header on on scroll down
             var didScroll;
             var lastScrollTop = 0;

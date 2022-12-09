@@ -375,9 +375,12 @@ header {
   position: absolute;
   width: 100%;  
   bottom: 10px;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .sidebar-navigation .social-icons li {
@@ -397,7 +400,7 @@ header {
 }
 
 .sidebar-navigation .social-icons li a:hover {
-  color: var(--casi-green);
+  color: var(--main);
 }
 
 
