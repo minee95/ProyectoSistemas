@@ -1,20 +1,5 @@
-
-
-*{
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body{
-	background: none;
-}
-
 .wrapper{
 	width: 100%;
-	margin-top: 100px;
 	background: #fff;
 	padding: 30px 0;
 }
@@ -34,14 +19,14 @@ body{
 	margin:auto;
 }
 
-.client-name{
+.client-namen{
 	font-family: "Open sans";
 	font-weight: 600;
-	text-align: center;
+	text-align: right;
 }
 
-.testimonial-text{
-	padding: 10px 120px;
+.testimonial-text {
+	padding: 0px 120px;
 }
 
 .testimonial-text p{
@@ -51,4 +36,19 @@ body{
 	font-style: italic;
 	text-align: center;
 	color: #060606;
+}
+
+@media screen and (max-width: 600px) {
+	/* .testimonial-client {
+		margin-bottom: 0;
+	} */
+	.testimonial-client img {
+		display: none;
+	}
+	.testimonial-text {
+		padding: 0px 20px;
+	}
+	.testimonial-text p {
+		font-size: 18px;
+	}
 }

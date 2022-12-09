@@ -32,17 +32,18 @@
 	height: 100%;
 	margin: 0;
 	position: absolute;
-	top: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	background: url('images/arr.png') no-repeat;
 }
 
 .sssprev {
-	left: 3%;
+	left: 0%;
 	background-position: 0 50%;
 }
 
 .sssnext {
-	right: 3%;
+	right: 0%;
 	background-position: -26px 50%;
 }
 
