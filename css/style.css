@@ -948,20 +948,18 @@ ol {
 /*----------------------------------------*/
 /*  Client Section CSS
 /*----------------------------------------*/
-.client-slider .single-brand {
-	display: table;
-	height: 80px;
-	width: 100%;
+.client-section .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+}
+.client-section .single-brand {
+	width: 200px;
 }
 
-.client-slider .single-brand a {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.client-slider .single-brand a img {
-	width: auto;
+.client-section .single-brand a img {
+	
 	margin: 0 auto;
 	opacity: 0.2;
 	-webkit-transition: all 0.4s;
@@ -969,7 +967,7 @@ ol {
 	transition: all 0.4s;
 }
 
-.client-slider .single-brand a:hover img {
+.client-section .single-brand a:hover img {
 	opacity: 1;
 }
 

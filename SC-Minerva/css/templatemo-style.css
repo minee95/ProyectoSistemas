@@ -202,6 +202,7 @@ header {
 	background: #baff00;
 }
 
+
 /* Responsive Navigation */
 
 .responsive-nav {
@@ -374,9 +375,12 @@ header {
   position: absolute;
   width: 100%;  
   bottom: 10px;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .sidebar-navigation .social-icons li {
@@ -396,7 +400,7 @@ header {
 }
 
 .sidebar-navigation .social-icons li a:hover {
-  color: var(--casi-green);
+  color: var(--main);
 }
 
 
@@ -887,10 +891,30 @@ header {
 
 /* Footer Style */
 
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10em;
+  width: 100%;
+}
+
+.container .single-brand a img {
+	opacity: 0.2;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+  width: 250px;
+}
+
+.container .single-brand a:hover img {
+	opacity: 1;
+}
+
 .footer {
+  margin-top: 2em;
   background-color: rgba(12,12,12,0.9);
-  height: 80px;
-  line-height: 80px;
+  height: 50px;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -899,7 +923,6 @@ header {
 .footer p {
   margin-bottom: 0px;
   font-size: 13px;
-  line-height: 80px;
   color: #fff;
   letter-spacing: 0.5px;
   font-weight: 300;
@@ -935,6 +958,63 @@ header {
 
   .sidebar-navigation .social-icons li a {
     font-size: 15px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .section-heading p {
+    position: relative;
+  }
+
+  #profesores {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #profesores .owl-nav {
+    position: absolute;
+    display: inline-block;
+    top: -220px;
+    right: 0;
+  }
+
+  #metodo {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #intro {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #cap7 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #cap7 .tabs a {
+    font-size: 13px;
+  }
+
+  #cap7 .tabgroup ul li img {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #cap7 .tabgroup ul li .text-content {
+    display: block;
+  }
+
+  #contact-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .site-btn {
+    min-width: 100px;
   }
 
 }
@@ -998,63 +1078,3 @@ header {
 
 }
 
-@media (max-width: 690px) {
-
-  section {
-    padding: 30px 0;
-  }
-
-  .section-heading p {
-    position: relative;
-  }
-
-  #profesores {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #profesores .owl-nav {
-    position: absolute;
-    display: inline-block;
-    top: -220px;
-    right: 0;
-  }
-
-  #metodo {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #intro {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #cap7 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #cap7 .tabs a {
-    font-size: 13px;
-  }
-
-  #cap7 .tabgroup ul li img {
-    float: none;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  #cap7 .tabgroup ul li .text-content {
-    display: block;
-  }
-
-  #contact-content {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .site-btn {
-    min-width: 100px;
-  }
-
-}
