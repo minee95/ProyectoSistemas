@@ -202,6 +202,7 @@ header {
 	background: #baff00;
 }
 
+
 /* Responsive Navigation */
 
 .responsive-nav {
@@ -887,10 +888,30 @@ header {
 
 /* Footer Style */
 
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10em;
+  width: 100%;
+}
+
+.container .single-brand a img {
+	opacity: 0.2;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+  width: 250px;
+}
+
+.container .single-brand a:hover img {
+	opacity: 1;
+}
+
 .footer {
+  margin-top: 2em;
   background-color: rgba(12,12,12,0.9);
-  height: 80px;
-  line-height: 80px;
+  height: 50px;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -899,7 +920,6 @@ header {
 .footer p {
   margin-bottom: 0px;
   font-size: 13px;
-  line-height: 80px;
   color: #fff;
   letter-spacing: 0.5px;
   font-weight: 300;
