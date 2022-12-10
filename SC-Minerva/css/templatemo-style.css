@@ -1022,6 +1022,10 @@ header {
 
 @media (max-width: 767px) {
 
+  .container .single-brand a img { 
+    width: 100px;
+  }
+
   .responsive-nav {
     display: block;
     height: 60px;
