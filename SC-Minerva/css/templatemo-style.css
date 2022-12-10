@@ -525,7 +525,7 @@ header {
 #profesores .item .image .profesores-button a {
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: rgb(7, 7, 7);
   text-align: center;
   text-transform: capitalize;
   background-color: rgba(69,72,154, 0.9);
@@ -549,7 +549,7 @@ header {
 
 #profesores .item .text-content {
   padding: 15px 20px;
-  background-color: var(--main);
+  background-color: none;
   position: relative;
   z-index: 10;
 }
@@ -565,12 +565,12 @@ header {
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
-  color: #7a7a7a;
+  color: #000000;
   letter-spacing: 0.5px;
 }
 
 #profesores .item .text-content p {
-  color: var(--alternative);
+  color:#000000 ;
   padding-top: 10px;
   font-size: 12px;
   line-height: 1.5;
