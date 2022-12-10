@@ -304,7 +304,7 @@ header {
 
 .sidebar-navigation nav {
   position: relative;
-  top: 60%;
+  top: 63%;
   left: 60%;
   -webkit-transform: translateX(-60%) translateY(-60%);
   -moz-transform: translateX(-60%) translateY(-60%);
@@ -422,7 +422,7 @@ header {
 #cap1 {
   background-color: var(--bg-1);
 }
-#cap2 {
+#cap2, #profesores {
   background-color: var(--bg-2);
 }
 #cap3 {
