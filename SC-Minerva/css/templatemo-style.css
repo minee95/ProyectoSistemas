@@ -422,7 +422,7 @@ header {
 #cap1 {
   background-color: var(--bg-1);
 }
-#cap2 {
+#cap2, #profesores {
   background-color: var(--bg-2);
 }
 #cap3 {
